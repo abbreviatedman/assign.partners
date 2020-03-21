@@ -1,21 +1,12 @@
-/******************
- * YOUR CODE HERE *
- ******************/
+const makeRoster = () => ({
+  _students: [],
 
-
-
-
-
-
-/*********************************
- * OUR CODE BELOW; DO NOT TOUCH! *
- *********************************/
-
-if (typeof exampleFunction === 'undefined') {
-  exampleFunction = undefined;
-}
+  addStudent: function(student) {
+    this._students.push(student);
+  }
+})
 
 
 module.exports = {
-  exampleFunction,
+  makeRoster,
 }
