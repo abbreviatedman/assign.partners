@@ -35,4 +35,13 @@ describe('roster.addStudent', () => {
     expect(roster1._students).toEqual(['Colin']);
     expect(roster2._students).toEqual(['Maya']);
   })
+
+  it(`adds the given value at the end of the roster`, () => {
+    const roster1 = makeRoster();
+    roster1.addStudent('Colin');
+    expect(roster1._students).toEqual(['Colin']);
+    roster1.addStudent('Maya');
+    expect(roster1._students).toEqual(['Colin', 'Maya']);
+  })
 })
+
