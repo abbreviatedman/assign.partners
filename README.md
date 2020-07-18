@@ -16,9 +16,38 @@ assign.partners has an [API](https://www.howtogeek.com/343877/what-is-an-api/) f
 
 **Endpoints**
 
+GET /users/{id}
+
+Returns the given user.
+
+Accessible to: the given logged-in user.
+
+---
+
+POST /users
+
+Creates a new user.
+
+Accessible to: any non-logged-in user.
+
+---
+
 GET /users/{id}/rosters
 
 Returns the rosters for the given user.
+
+
+Accessible to: any non-logged-in user.
+
+---
+
+GET /users/{id}/roster/{id}
+
+Returns the given roster for the given user.
+
+---
+
+GET 
 
 ---
 
